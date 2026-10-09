@@ -1,0 +1,392 @@
+{
+  "_note": "Single source of truth for generated profile assets. Every claim here should trace to a public repo, danishnadar.com, or Danish's own statement (see docs/VERIFICATION.md). Rebuild with: python scripts/build_assets.py",
+  "links": {
+    "github": "https://github.com/DanishNadar",
+    "site": "https://www.danishnadar.com",
+    "projects": "https://www.danishnadar.com/projects",
+    "resume": "https://www.danishnadar.com/resume",
+    "autonomy": "https://www.danishnadar.com/autonomous-vehicles",
+    "contact": "https://www.danishnadar.com/contact",
+    "linkedin": "https://www.linkedin.com/in/danish-nadar/",
+    "feature": "https://www.iit.edu/student-experience/student-and-alumni-stories/intelligent-systems-safer-roads"
+  },
+  "statuses": {
+    "live": ["LIVE DEMO", "#35A7FF"],
+    "oss": ["OPEN SOURCE", "#9EB3CD"],
+    "research": ["RESEARCH PROTOTYPE", "#BFE1FF"],
+    "winner": ["HACKATHON WINNER", "#FF4B57"],
+    "team": ["TEAM BUILD", "#9EB3CD"],
+    "case": ["CASE STUDY", "#BFE1FF"],
+    "experience": ["PROFESSIONAL WORK", "#FF4B57"],
+    "proposal": ["INITIATIVE", "#FF4B57"],
+    "tested": ["CI + TESTS", "#9EB3CD"],
+    "course": ["COURSE RESEARCH", "#BFE1FF"]
+  },
+  "flagships": [
+    {
+      "id": "taloncv",
+      "name": "TalonCV",
+      "kicker": "MULTIMODAL AI  /  BROWSER-LOCAL INFERENCE",
+      "tagline": "Private, explainable interview coaching: speech, language and vision models that run entirely in the browser.",
+      "facts": [
+        "Five model families in Web Workers: Whisper, MiniLM, YOLO11-face (ONNX), MediaPipe, SmolLM2",
+        "Time-aligned audio, visual and transcript evidence feeds deterministic, explainable scores",
+        "No backend and no inference API: static Next.js export, sessions stored in IndexedDB"
+      ],
+      "stack": ["TypeScript", "Next.js", "Transformers.js", "ONNX Runtime Web", "MediaPipe", "scikit-learn", "Python"],
+      "status": ["live", "oss", "tested"],
+      "accent": "#35A7FF",
+      "motif": "multimodal",
+      "repo": "https://github.com/DanishNadar/TalonCV",
+      "demo": "https://talon-cv-rosy.vercel.app"
+    },
+    {
+      "id": "morph",
+      "name": "Morph",
+      "kicker": "MODEL OPTIMIZATION  /  LLM COMPRESSION",
+      "tagline": "Depth-compresses Hugging Face causal LMs, then uses teacher–student distillation to recover what pruning loses.",
+      "facts": [
+        "Selects transformer blocks uniformly across the teacher's depth and transfers their weights into a smaller student",
+        "Objective: next-token CE + temperature-scaled KL to the teacher + optional hidden-state MSE",
+        "4/8-bit teacher quantization, BF16/FP16, gradient checkpointing; Llama, Mistral, Qwen2, GPT-2, Falcon, OPT, NeoX"
+      ],
+      "stack": ["PyTorch", "Transformers", "Datasets", "Accelerate", "bitsandbytes", "safetensors"],
+      "status": ["research", "oss"],
+      "accent": "#BFE1FF",
+      "motif": "layers",
+      "repo": "https://github.com/DanishNadar/Morph"
+    },
+    {
+      "id": "observe",
+      "name": "OBSERV-E",
+      "kicker": "AUTONOMOUS PERCEPTION  /  ASSISTIVE ROBOTICS",
+      "tagline": "Human-following perception and spoken guidance for visually impaired users. Won the StarkHacks 2026 Qualcomm Robotics Track.",
+      "facts": [
+        "YOLO11 person detection, single-target lock, and tracking with an OpenCV / Lucas–Kanade optical-flow fallback",
+        "A constant-velocity Kalman filter projects the gimbal target state at 100–300 Hz, decoupled from inference rate",
+        "On-device hazard detection, an optional asynchronous VLM scene narrator, and speech that fires only when something changes"
+      ],
+      "stack": ["Python", "Ultralytics YOLO", "OpenCV", "NumPy", "Kalman filtering", "VLM API", "STM32 + BLE (team)"],
+      "status": ["winner", "team", "oss"],
+      "accent": "#FF4B57",
+      "motif": "tracking",
+      "repo": "https://github.com/DanishNadar/observ-e",
+      "case": "https://www.danishnadar.com/projects/observ-e"
+    }
+  ],
+  "groups": [
+    {
+      "id": "autonomy",
+      "title": "Autonomous Systems & Robotics",
+      "projects": [
+        {
+          "id": "ecocar",
+          "name": "EcoCAR Sensor Fusion",
+          "kicker": "CONNECTED & AUTOMATED VEHICLES",
+          "tagline": "Requirements, validation tests and real-time C++/RTMaps modules for lead-vehicle detection and driver monitoring.",
+          "stack": ["C++", "RTMaps", "Camera", "Radar", "LiDAR"],
+          "status": ["experience", "case"],
+          "accent": "#FF4B57",
+          "motif": "fusion",
+          "case": "https://www.danishnadar.com/projects/ecocar-sensor-fusion"
+        },
+        {
+          "id": "lanes",
+          "name": "Lane Detection Study",
+          "kicker": "COMPUTER VISION  /  ONCE-3DLANES",
+          "tagline": "ResNet-18 vs EfficientNet-B0 vs MobileNetV2, each trained with and without augmentation: a 6-run grid with metrics, plots and video.",
+          "stack": ["PyTorch", "torchvision", "Albumentations", "OpenCV", "Matplotlib"],
+          "status": ["course", "oss"],
+          "accent": "#35A7FF",
+          "motif": "lanes",
+          "repo": "https://github.com/DanishNadar/CS-584-Final-Project",
+          "case": "https://www.danishnadar.com/projects/lane-detection-salad"
+        },
+        {
+          "id": "rl",
+          "name": "RL Lane-Keeping Simulator",
+          "kicker": "REINFORCEMENT LEARNING  /  SIMULATION",
+          "tagline": "PPO agents in a custom simulator, comparing camera, camera+LiDAR and full-stack sensing on collisions, lane deviation and completion.",
+          "stack": ["Python", "PPO", "Reward design", "Simulation"],
+          "status": ["course", "case"],
+          "accent": "#BFE1FF",
+          "motif": "rl",
+          "case": "https://www.danishnadar.com/projects/rl-autonomous-driving"
+        }
+      ]
+    },
+    {
+      "id": "applied",
+      "title": "Applied AI Products",
+      "projects": [
+        {
+          "id": "confusion",
+          "name": "ConfusionClassifier",
+          "kicker": "PROBABILISTIC ML  /  INTERACTIVE",
+          "tagline": "A club-fair game where players try to drive a GoEmotions text classifier to a uniform 25/25/25/25 prediction.",
+          "stack": ["scikit-learn", "FastAPI", "React", "TypeScript", "Supabase"],
+          "status": ["live", "oss"],
+          "accent": "#35A7FF",
+          "motif": "equilibrium",
+          "repo": "https://github.com/DanishNadar/ConfusionClassifier",
+          "demo": "https://confusion-classifier-chi.vercel.app"
+        },
+        {
+          "id": "aila",
+          "name": "AILA",
+          "kicker": "VOICE AI  /  CONVERSATIONAL AGENTS",
+          "tagline": "AI Leadership Avatar for Illinois Tech's Leadership Academy: role-play scenarios with speech in, speech out and barge-in.",
+          "stack": ["JavaScript", "Groq LLM + STT", "XTTS-v2", "Ollama (local PoC)", "Vercel"],
+          "status": ["live", "oss"],
+          "accent": "#BFE1FF",
+          "motif": "voice",
+          "repo": "https://github.com/DanishNadar/AILA_Avatar",
+          "demo": "https://aila-avatar.vercel.app",
+          "case": "https://www.danishnadar.com/projects/aila-avatar"
+        }
+      ]
+    },
+    {
+      "id": "infra",
+      "title": "Engineering Infrastructure & Product Systems",
+      "projects": [
+        {
+          "id": "campgrids",
+          "name": "CampGrids",
+          "kicker": "FULL-STACK PLATFORM  /  MSI FAB LAB CAMPS",
+          "tagline": "Turns a hyperlink-heavy curriculum workbook into a live platform with roles, rosters, progress tracking and partner pages.",
+          "stack": ["JavaScript", "Supabase", "Postgres RLS", "Edge Functions", "Python", "AWS CloudFormation"],
+          "status": ["live", "oss"],
+          "accent": "#FF4B57",
+          "motif": "grid",
+          "repo": "https://github.com/DanishNadar/CampGrids",
+          "demo": "https://camp-grids.vercel.app"
+        },
+        {
+          "id": "compute",
+          "name": "Compute Collaborative",
+          "kicker": "GPU INFRASTRUCTURE  /  INITIATIVE",
+          "tagline": "Funding proposal site for a student-run GPU suite, with a workload explorer, budget builder and own-vs-rent model.",
+          "stack": ["HTML", "CSS", "JavaScript", "Cost modeling"],
+          "status": ["proposal", "oss"],
+          "accent": "#35A7FF",
+          "motif": "gpu",
+          "repo": "https://github.com/DanishNadar/ComputeCollaborative"
+        }
+      ]
+    }
+  ],
+  "more": [
+    ["LEAD-AI", "https://github.com/DanishNadar/LEAD-AI", "https://lead-ai-eight.vercel.app", "Auditable leadership-outcome reporting: async CampusGroups export client, deterministic semantic read of weekly reports, Neon Postgres. Next.js + TypeScript."],
+    ["Certeverin", "https://github.com/DanishNadar/Certeverin", "https://certeverin.vercel.app", "Maps job-posting skill demand to certification objectives to help a club decide which certifications to fund. FastAPI, Next.js, CLI and PDF export."],
+    ["Cloud Conglomerate", "https://github.com/DanishNadar/CloudConglomerate", null, "Offline Godot 4 game that teaches cloud and ML system design: architectures appear as constellations you inspect, scale and fail over."],
+    ["TTP DNS Screening", "https://github.com/DanishNadar/TTP_DNS-Screening-Tool", null, "SPF/DKIM/DMARC screening automation for Technology Transition Paradigm, with DoH lookups (Google, Cloudflare) and checkdmarc validation."],
+    ["ITR Lab Access", "https://github.com/DanishNadar/ITR-Lab-Access", "https://itr-lab-access.vercel.app", "Full-stack lab-access management for Illinois Tech Robotics. Next.js 14, Neon Postgres, Drizzle ORM."],
+    ["DanishPortfolio", "https://github.com/DanishNadar/DanishPortfolio", "https://www.danishnadar.com", "The source for danishnadar.com: TanStack Start, React, Supabase CMS, an LLM-backed portfolio guide and a 3D skills experience."]
+  ],
+  "pipeline": [
+    {
+      "stage": "PERCEPTION",
+      "verb": "sense the world",
+      "color": "#35A7FF",
+      "evidence": ["TalonCV · Whisper, YOLO, MediaPipe", "OBSERV-E · YOLO11 tracking", "EcoCAR · camera/radar/LiDAR", "Lane study · ONCE-3DLanes"]
+    },
+    {
+      "stage": "REPRESENTATION",
+      "verb": "encode what matters",
+      "color": "#5FB8FF",
+      "evidence": ["TalonCV · MiniLM embeddings", "ConfusionClassifier · TF-IDF", "Morph · hidden-state matching"]
+    },
+    {
+      "stage": "REASONING",
+      "verb": "infer & explain",
+      "color": "#BFE1FF",
+      "evidence": ["TalonCV · multimodal alignment", "OBSERV-E · VLM narration", "Morph · distilled LMs"]
+    },
+    {
+      "stage": "DECISION",
+      "verb": "choose under uncertainty",
+      "color": "#FF7A84",
+      "evidence": ["OBSERV-E · Kalman prediction", "RL sim · PPO policy", "ConfusionClassifier · calibrated probabilities"]
+    },
+    {
+      "stage": "ACTION",
+      "verb": "change the world",
+      "color": "#FF4B57",
+      "evidence": ["OBSERV-E · gimbal state + speech", "RL sim · steering control", "EcoCAR · driver-monitoring modules"]
+    }
+  ],
+  "skills": [
+    {
+      "title": "AI / MACHINE LEARNING",
+      "color": "#35A7FF",
+      "items": [
+        ["PyTorch + Hugging Face", "Morph, Lane study"],
+        ["Knowledge distillation", "Morph"],
+        ["Browser inference (ONNX, WebGPU)", "TalonCV"],
+        ["Speech: Whisper, TTS, STT", "TalonCV, AILA"],
+        ["Vision: YOLO, MediaPipe, OpenCV", "TalonCV, OBSERV-E"],
+        ["NLP + embeddings", "TalonCV, ConfusionClassifier"],
+        ["LLM / VLM integration", "OBSERV-E, AILA"]
+      ]
+    },
+    {
+      "title": "AUTONOMY / ROBOTICS",
+      "color": "#FF4B57",
+      "items": [
+        ["Sensor fusion (cam/radar/LiDAR)", "EcoCAR"],
+        ["RTMaps real-time pipelines", "EcoCAR"],
+        ["Kalman filtering + tracking", "OBSERV-E"],
+        ["Reinforcement learning (PPO)", "RL sim"],
+        ["Lane perception", "Lane study"],
+        ["Requirements + validation", "EcoCAR"],
+        ["Hardware integration (BLE, serial)", "OBSERV-E"]
+      ]
+    },
+    {
+      "title": "SOFTWARE ENGINEERING",
+      "color": "#BFE1FF",
+      "items": [
+        ["Python · TypeScript · C++", "across repos"],
+        ["Next.js · React", "TalonCV, LEAD-AI"],
+        ["FastAPI", "ConfusionClassifier, Certeverin"],
+        ["Web Workers + IndexedDB", "TalonCV"],
+        ["Testing: Vitest, Playwright, pytest", "TalonCV"],
+        ["Godot 4 / GDScript", "Cloud Conglomerate"],
+        ["Streamlit tooling", "TalonCV, TTP"]
+      ]
+    },
+    {
+      "title": "CLOUD / INFRASTRUCTURE",
+      "color": "#9EB3CD",
+      "items": [
+        ["Supabase: Postgres, RLS, Edge Fns", "CampGrids"],
+        ["AWS IaC: CloudFormation, Cognito, RDS", "CampGrids"],
+        ["Neon Postgres + Drizzle", "LEAD-AI, ITR Lab"],
+        ["Vercel serverless + static export", "TalonCV, AILA"],
+        ["GitHub Actions CI", "TalonCV"],
+        ["Azure Speech / Cognitive Services", "OfficePro"],
+        ["GPU capacity + cost modeling", "Compute Collab."]
+      ]
+    },
+    {
+      "title": "RESEARCH / OPTIMIZATION",
+      "color": "#FF7A84",
+      "items": [
+        ["Experiment grids + ablations", "Lane study"],
+        ["Dev-only model selection", "ConfusionClassifier"],
+        ["Calibration + log-loss", "ConfusionClassifier"],
+        ["Quantization (4/8-bit, q4/q8)", "Morph, TalonCV"],
+        ["CPU pipeline benchmarking", "TalonCV, OBSERV-E"],
+        ["Reproducibility + provenance", "Morph, ConfusionClassifier"],
+        ["Explainability", "TalonCV, ConfusionClassifier"]
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "role": "President",
+      "org": "Machine Learning @ Illinois Tech",
+      "body": "Leads the student ML community: technical workshops, build sessions and public demos such as ConfusionClassifier at the club fair.",
+      "color": "#35A7FF",
+      "when": "CURRENT"
+    },
+    {
+      "role": "President",
+      "org": "Illinois Tech Robotics",
+      "body": "Previously Treasurer and Instructor. Ran budgets and workshops (AI/ML, Linux, Python) and led an autonomous robot-fleet project.",
+      "color": "#FF4B57",
+      "when": "CURRENT · MEMBER SINCE 2024"
+    },
+    {
+      "role": "Autonomous Systems Lead",
+      "org": "NASA Lunabotics Team",
+      "body": "Leads autonomy software for the team's lunar robotics entry: perception, localization, mapping and planning.",
+      "color": "#BFE1FF",
+      "when": "IN PROGRESS · COMPETITION PREP"
+    },
+    {
+      "role": "Co-Founder & Chief AI Officer",
+      "org": "A Little Tech For You",
+      "body": "Technology learning for older adults: an AI-narrated lesson pipeline, plain-language assistance and the model/inference stack.",
+      "color": "#FF7A84",
+      "when": "CURRENT · EARLY STAGE"
+    },
+    {
+      "role": "Sensor Fusion Lead",
+      "org": "EcoCAR EV Challenge",
+      "body": "Connected & automated vehicle engineer: perception requirements, validation test cases and real-time C++/RTMaps modules.",
+      "color": "#35A7FF",
+      "when": "2024 – PRESENT"
+    },
+    {
+      "role": "Leadership Academy Scholar",
+      "org": "M.A. & Lila Self Leadership Academy",
+      "body": "Selected for leadership development. Built AILA and LEAD-AI as AI tools for the Academy itself.",
+      "color": "#9EB3CD",
+      "when": "2025 – PRESENT"
+    }
+  ],
+  "recognition": [
+    ["WINNER", "StarkHacks 2026, Qualcomm Robotics Track (OBSERV-E, team)"],
+    ["FEATURED", "Illinois Tech story: “Intelligent Systems for Safer Roads”"],
+    ["BADGE", "Microsoft Learn AI Skills Fest"]
+  ],
+  "timeline": [
+    ["2023", "Cloud foundations", "A.A.S. Cloud Computing & Network Technology, Montgomery College", "blue"],
+    ["2023", "AI degree path", "Starts the combined B.S. + M.A.S. in Artificial Intelligence at Illinois Tech", "blue"],
+    ["2024", "Autonomous vehicles", "Joins EcoCAR as CAV engineer and becomes Sensor Fusion Lead", "red"],
+    ["2024", "Robotics leadership", "Joins Illinois Tech Robotics officer team; teaches AI/ML workshops", "red"],
+    ["2025", "Industry AI", "AI Software Development Intern at OfficePro (Azure speech)", "blue"],
+    ["2025", "Security automation", "Software Automation Engineer, Technology Transition Paradigm", "blue"],
+    ["2026", "Hackathon win", "OBSERV-E wins the StarkHacks Qualcomm Robotics Track", "red"],
+    ["2026", "Deep systems", "TalonCV, Morph, lane-detection and RL driving research", "blue"],
+    ["2026", "Leading at scale", "President of ML @ Illinois Tech and Illinois Tech Robotics; Lunabotics autonomy lead", "red"],
+    ["2027", "Graduation", "B.S. + M.A.S. in Artificial Intelligence, Data Science minor (expected May)", "blue"]
+  ],
+  "activity": {
+    "_demos_note": "Only verified demo URLs are shown; repo homepage fields are ignored because some point to dead or unrelated deployments.",
+    "demos": {
+      "TalonCV": "https://talon-cv-rosy.vercel.app",
+      "ConfusionClassifier": "https://confusion-classifier-chi.vercel.app",
+      "CampGrids": "https://camp-grids.vercel.app",
+      "LEAD-AI": "https://lead-ai-eight.vercel.app",
+      "AILA_Avatar": "https://aila-avatar.vercel.app",
+      "Certeverin": "https://certeverin.vercel.app",
+      "ITR-Lab-Access": "https://itr-lab-access.vercel.app",
+      "DanishPortfolio": "https://www.danishnadar.com",
+      "Scammantha": "https://scammantha.vercel.app",
+      "observ-e": "https://observ-e.vercel.app"
+    },
+    "exclude": ["DanishNadar", "IntegrityFailure", "RL_AutonomousDriving_Simulation_CS484_FinalProject", "Email-Signatures", "Spiron-DIscord-Theme", "PythonOOP", "Spiron", "SpironNWIT101", "DevUpITR2025", "itrc_treasury_bookkeeping", "AILA_V0", "AILA_Voice", "ai-nexus", "481_FinalProject", "CS481_100k-Coursera-Course-Reviews-Dataset", "DN_DiamondPricePrediction", "AIRA"],
+    "descriptions": {
+      "TalonCV": "Browser-local multimodal interview coach (Whisper · MiniLM · YOLO · MediaPipe)",
+      "Morph": "LLM depth compression + knowledge distillation",
+      "observ-e": "Human-following perception, Kalman prediction, VLM narration (StarkHacks 2026 winner)",
+      "ConfusionClassifier": "Interactive probabilistic text-classification game",
+      "CampGrids": "Curriculum platform for MSI Fab Lab camps (Supabase, RLS, Edge Functions)",
+      "ComputeCollaborative": "Student GPU-infrastructure proposal with cost and workload models",
+      "LEAD-AI": "Auditable leadership-outcome reporting (Next.js, Neon Postgres)",
+      "AILA_Avatar": "Voice role-play leadership coach with barge-in",
+      "AILA": "Local-inference voice assistant proof of concept (Ollama)",
+      "Certeverin": "Job-demand-driven certification scoring (FastAPI + Next.js)",
+      "CloudConglomerate": "Godot 4 game that teaches cloud and ML system design",
+      "DanishPortfolio": "Source for danishnadar.com",
+      "CS-584-Final-Project": "Lane-detection backbone x augmentation study (ONCE-3DLanes)",
+      "ITR-Lab-Access": "Lab-access management for Illinois Tech Robotics",
+      "TTP_DNS-Screening-Tool": "SPF / DKIM / DMARC screening automation",
+      "Vistige": "SDXL image-to-image generation CLI",
+      "Evyntra": "Local AI-event discovery and ranking pipeline",
+      "Scammantha": "Scam-awareness training game with an AI scammer",
+      "ttp-tracker": "Outreach tracking for DNS screening results",
+      "JTR": "AI job-seeking agent prototype",
+      "Selvam": "ScarletHacks M&A intelligence prototype (team)",
+      "ITRC-Treasury-App": "Bookkeeping app for the Illinois Tech Railroad Club",
+      "AIRA_ML_Class": "ML workshop notebooks for Illinois Tech Robotics",
+      "CS425_FinalProject_MDJ": "Database systems course project (team)",
+      "Cpp_Learning_IIT": "C++ learning guide with solutions (co-authored)",
+      "PropagandaDetection": "Propaganda detection text classifier",
+      "DN_HousePricePrediction": "House-price model with Flask deployment"
+    }
+  }
+}

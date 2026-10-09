@@ -1,0 +1,3 @@
+# Private audit notes, not for publication
+*.local.md
+__pycache__/
