@@ -164,7 +164,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 ## Live Engineering Signal
 
 <!-- INSIGHT:START -->
-<a href="https://github.com/DanishNadar/ConfusionClassifier"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Explanations are associations. ConfusionClassifier explains each prediction as TF-IDF × coefficient contributions and labels them as correlations, not causes."/></a>
+<a href="https://github.com/DanishNadar/LEAD-AI"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Fail closed. LEAD-AI's live sync refuses to run without cohort group IDs or a durable database, so data can't silently land in ephemeral memory."/></a>
 <!-- INSIGHT:END -->
 
 <img src="assets/live/contributions.svg" width="100%" alt="Contribution activity over the last 12 months, colored blue by intensity with the top 5% of days in red.">
@@ -174,14 +174,14 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 <!-- RECENT:START -->
 | Repository | What it is | Language | Last push |
 |:--|:--|:--|:--|
+| [**CampGrids**](https://github.com/DanishNadar/CampGrids) · [demo](https://camp-grids.vercel.app) | Curriculum platform for MSI Fab Lab camps (Supabase, RLS, Edge Functions) | `JavaScript` | 2026-10-12 |
 | [**DanishPortfolio**](https://github.com/DanishNadar/DanishPortfolio) · [demo](https://www.danishnadar.com) | Source for danishnadar.com | `TypeScript` | 2026-10-09 |
 | [**LEAD-AI**](https://github.com/DanishNadar/LEAD-AI) · [demo](https://lead-ai-eight.vercel.app) | Auditable leadership-outcome reporting (Next.js, Neon Postgres) | `TypeScript` | 2026-09-29 |
 | [**AILA_Avatar**](https://github.com/DanishNadar/AILA_Avatar) · [demo](https://aila-avatar.vercel.app) | Voice role-play leadership coach with barge-in | `JavaScript` | 2026-09-29 |
-| [**CampGrids**](https://github.com/DanishNadar/CampGrids) · [demo](https://camp-grids.vercel.app) | Curriculum platform for MSI Fab Lab camps (Supabase, RLS, Edge Functions) | `JavaScript` | 2026-09-25 |
 | [**ComputeCollaborative**](https://github.com/DanishNadar/ComputeCollaborative) | Student GPU-infrastructure proposal with cost and workload models | `HTML` | 2026-08-27 |
 | [**CloudConglomerate**](https://github.com/DanishNadar/CloudConglomerate) | Godot 4 game that teaches cloud and ML system design | `GDScript` | 2026-08-27 |
 
-_Auto-updated 2026-10-11 by GitHub Actions · forks, archives and coursework stubs are filtered out_
+_Auto-updated 2026-10-12 by GitHub Actions · forks, archives and coursework stubs are filtered out_
 <!-- RECENT:END -->
 
 ---
