@@ -164,7 +164,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 ## Live Engineering Signal
 
 <!-- INSIGHT:START -->
-<a href="https://github.com/DanishNadar/LEAD-AI"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Fail closed. LEAD-AI's live sync refuses to run without cohort group IDs or a durable database, so data can't silently land in ephemeral memory."/></a>
+<a href="https://github.com/DanishNadar/ComputeCollaborative"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Every estimate cites its sources. Compute Collaborative marks each cost as vendor-verified or modeled, and shows its line items, assumptions and sources."/></a>
 <!-- INSIGHT:END -->
 
 <img src="assets/live/contributions.svg" width="100%" alt="Contribution activity over the last 12 months, colored blue by intensity with the top 5% of days in red.">
@@ -181,7 +181,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 | [**ComputeCollaborative**](https://github.com/DanishNadar/ComputeCollaborative) | Student GPU-infrastructure proposal with cost and workload models | `HTML` | 2026-08-27 |
 | [**CloudConglomerate**](https://github.com/DanishNadar/CloudConglomerate) | Godot 4 game that teaches cloud and ML system design | `GDScript` | 2026-08-27 |
 
-_Auto-updated 2026-10-18 by GitHub Actions · forks, archives and coursework stubs are filtered out_
+_Auto-updated 2026-10-19 by GitHub Actions · forks, archives and coursework stubs are filtered out_
 <!-- RECENT:END -->
 
 ---
