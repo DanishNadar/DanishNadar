@@ -174,14 +174,14 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 <!-- RECENT:START -->
 | Repository | What it is | Language | Last push |
 |:--|:--|:--|:--|
+| [**Backtrack**](https://github.com/DanishNadar/Backtrack) | Backtrack—A Ragebaiter's Guide to the Void | `GDScript` | 2026-10-24 |
 | [**CampGrids**](https://github.com/DanishNadar/CampGrids) · [demo](https://camp-grids.vercel.app) | Curriculum platform for MSI Fab Lab camps (Supabase, RLS, Edge Functions) | `JavaScript` | 2026-10-12 |
 | [**DanishPortfolio**](https://github.com/DanishNadar/DanishPortfolio) · [demo](https://www.danishnadar.com) | Source for danishnadar.com | `TypeScript` | 2026-10-09 |
 | [**LEAD-AI**](https://github.com/DanishNadar/LEAD-AI) · [demo](https://lead-ai-eight.vercel.app) | Auditable leadership-outcome reporting (Next.js, Neon Postgres) | `TypeScript` | 2026-09-29 |
 | [**AILA_Avatar**](https://github.com/DanishNadar/AILA_Avatar) · [demo](https://aila-avatar.vercel.app) | Voice role-play leadership coach with barge-in | `JavaScript` | 2026-09-29 |
 | [**ComputeCollaborative**](https://github.com/DanishNadar/ComputeCollaborative) | Student GPU-infrastructure proposal with cost and workload models | `HTML` | 2026-08-27 |
-| [**CloudConglomerate**](https://github.com/DanishNadar/CloudConglomerate) | Godot 4 game that teaches cloud and ML system design | `GDScript` | 2026-08-27 |
 
-_Auto-updated 2026-10-23 by GitHub Actions · forks, archives and coursework stubs are filtered out_
+_Auto-updated 2026-10-24 by GitHub Actions · forks, archives and coursework stubs are filtered out_
 <!-- RECENT:END -->
 
 ---
