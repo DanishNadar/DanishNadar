@@ -164,7 +164,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 ## Live Engineering Signal
 
 <!-- INSIGHT:START -->
-<a href="https://github.com/DanishNadar/ComputeCollaborative"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Every estimate cites its sources. Compute Collaborative marks each cost as vendor-verified or modeled, and shows its line items, assumptions and sources."/></a>
+<a href="https://github.com/DanishNadar/TalonCV"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Keep the evidence where it was recorded. TalonCV runs every model in browser workers. Recordings, transcripts and frames never leave the device, so privacy is built into the architecture."/></a>
 <!-- INSIGHT:END -->
 
 <img src="assets/live/contributions.svg" width="100%" alt="Contribution activity over the last 12 months, colored blue by intensity with the top 5% of days in red.">
@@ -181,7 +181,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 | [**AILA_Avatar**](https://github.com/DanishNadar/AILA_Avatar) · [demo](https://aila-avatar.vercel.app) | Voice role-play leadership coach with barge-in | `JavaScript` | 2026-09-29 |
 | [**ComputeCollaborative**](https://github.com/DanishNadar/ComputeCollaborative) | Student GPU-infrastructure proposal with cost and workload models | `HTML` | 2026-08-27 |
 
-_Auto-updated 2026-10-25 by GitHub Actions · forks, archives and coursework stubs are filtered out_
+_Auto-updated 2026-10-26 by GitHub Actions · forks, archives and coursework stubs are filtered out_
 <!-- RECENT:END -->
 
 ---
