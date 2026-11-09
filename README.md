@@ -164,7 +164,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 ## Live Engineering Signal
 
 <!-- INSIGHT:START -->
-<a href="https://github.com/DanishNadar/TalonCV"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Deterministic scores, optional language model. TalonCV's scores come from measured, time-aligned evidence. The local LLM only rewords the coaching text and is never the source of the score."/></a>
+<a href="https://github.com/DanishNadar/TalonCV"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Say what the model cannot see. In TalonCV, YOLO localizes faces and nothing more. Cue evidence never infers emotion, personality or hiring suitability."/></a>
 <!-- INSIGHT:END -->
 
 <img src="assets/live/contributions.svg" width="100%" alt="Contribution activity over the last 12 months, colored blue by intensity with the top 5% of days in red.">
@@ -181,7 +181,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 | [**ComputeCollaborative**](https://github.com/DanishNadar/ComputeCollaborative) | Student GPU-infrastructure proposal with cost and workload models | `HTML` | 2026-08-27 |
 | [**CloudConglomerate**](https://github.com/DanishNadar/CloudConglomerate) | Godot 4 game that teaches cloud and ML system design | `GDScript` | 2026-08-27 |
 
-_Auto-updated 2026-11-08 by GitHub Actions · forks, archives and coursework stubs are filtered out_
+_Auto-updated 2026-11-09 by GitHub Actions · forks, archives and coursework stubs are filtered out_
 <!-- RECENT:END -->
 
 ---
