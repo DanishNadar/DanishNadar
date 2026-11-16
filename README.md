@@ -164,7 +164,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 ## Live Engineering Signal
 
 <!-- INSIGHT:START -->
-<a href="https://github.com/DanishNadar/TalonCV"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Say what the model cannot see. In TalonCV, YOLO localizes faces and nothing more. Cue evidence never infers emotion, personality or hiring suitability."/></a>
+<a href="https://github.com/DanishNadar/Morph"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Keep layers from the whole depth. Morph keeps teacher blocks spread across the full network, late layers included, instead of truncating to the first N."/></a>
 <!-- INSIGHT:END -->
 
 <img src="assets/live/contributions.svg" width="100%" alt="Contribution activity over the last 12 months, colored blue by intensity with the top 5% of days in red.">
@@ -174,14 +174,14 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 <!-- RECENT:START -->
 | Repository | What it is | Language | Last push |
 |:--|:--|:--|:--|
-| [**Ember**](https://github.com/DanishNadar/Ember) | Project: Ember | `Python` | 2026-11-14 |
+| [**Ember**](https://github.com/DanishNadar/Ember) | Project: Ember | `Python` | 2026-11-15 |
 | [**DanishPortfolio**](https://github.com/DanishNadar/DanishPortfolio) · [demo](https://www.danishnadar.com) | Source for danishnadar.com | `TypeScript` | 2026-11-10 |
 | [**LEAD-AI**](https://github.com/DanishNadar/LEAD-AI) · [demo](https://lead-ai-eight.vercel.app) | Auditable leadership-outcome reporting (Next.js, Neon Postgres) | `TypeScript` | 2026-11-03 |
 | [**Backtrack**](https://github.com/DanishNadar/Backtrack) | Backtrack—A Ragebaiter's Guide to the Void | `GDScript` | 2026-10-24 |
 | [**AILA_Avatar**](https://github.com/DanishNadar/AILA_Avatar) · [demo](https://aila-avatar.vercel.app) | Voice role-play leadership coach with barge-in | `JavaScript` | 2026-09-29 |
 | [**ComputeCollaborative**](https://github.com/DanishNadar/ComputeCollaborative) | Student GPU-infrastructure proposal with cost and workload models | `HTML` | 2026-08-27 |
 
-_Auto-updated 2026-11-15 by GitHub Actions · forks, archives and coursework stubs are filtered out_
+_Auto-updated 2026-11-16 by GitHub Actions · forks, archives and coursework stubs are filtered out_
 <!-- RECENT:END -->
 
 ---
