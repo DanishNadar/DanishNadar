@@ -164,7 +164,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 ## Live Engineering Signal
 
 <!-- INSIGHT:START -->
-<a href="https://github.com/DanishNadar/Morph"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Keep layers from the whole depth. Morph keeps teacher blocks spread across the full network, late layers included, instead of truncating to the first N."/></a>
+<a href="https://github.com/DanishNadar/Morph"><img src="assets/live/insight.svg" width="100%" alt="Design decision of the week: Compression ratio is not quality. Morph's evaluation guide asks for held-out perplexity, teacher–student KL, prediction agreement, throughput and peak memory."/></a>
 <!-- INSIGHT:END -->
 
 <img src="assets/live/contributions.svg" width="100%" alt="Contribution activity over the last 12 months, colored blue by intensity with the top 5% of days in red.">
@@ -181,7 +181,7 @@ I like problems that cross the whole loop, from turning raw audio, video and sen
 | [**AILA_Avatar**](https://github.com/DanishNadar/AILA_Avatar) · [demo](https://aila-avatar.vercel.app) | Voice role-play leadership coach with barge-in | `JavaScript` | 2026-09-29 |
 | [**ComputeCollaborative**](https://github.com/DanishNadar/ComputeCollaborative) | Student GPU-infrastructure proposal with cost and workload models | `HTML` | 2026-08-27 |
 
-_Auto-updated 2026-11-22 by GitHub Actions · forks, archives and coursework stubs are filtered out_
+_Auto-updated 2026-11-23 by GitHub Actions · forks, archives and coursework stubs are filtered out_
 <!-- RECENT:END -->
 
 ---
